@@ -9,5 +9,8 @@ module.exports = {
   ],
 
   // Format MarkDown, YAML and JSON
-  '**/*.(md|mdx|json|yml|yaml)': filenames => `yarn prettier --write ${filenames.join(' ')}`
+  '**/*.(md|mdx|json|yml|yaml)': filenames => `yarn prettier --write ${filenames.join(' ')}`,
+
+  // Test files
+  'src/**/*.(ts|tsx|js)': () => 'yarn test --bail --findRelatedTests'
 }
