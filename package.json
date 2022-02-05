@@ -6,9 +6,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint ./src --ext .js,.ts,.tsx",
-    "test": "jest",
-    "test:watch": "jest --watchAll",
-    "test:coverage": "jest --coverage",
+    "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watchAll --maxWorkers=25%",
+    "test:coverage": "jest --coverage --maxWorkers=50%",
+    "test:ci": "jest --runInBand",
     "prepare": "husky install"
   },
   "dependencies": {
