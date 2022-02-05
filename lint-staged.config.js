@@ -12,5 +12,5 @@ module.exports = {
   '**/*.(md|mdx|json|yml|yaml)': filenames => `yarn prettier --write ${filenames.join(' ')}`,
 
   // Test files
-  '**/?(*.)+(spec|test).+(ts|tsx|js)': () => 'yarn test:staged'
+  '**/*.(ts|tsx)': () => 'yarn test:staged'
 }
