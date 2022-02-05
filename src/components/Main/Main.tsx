@@ -1,8 +1,13 @@
+import * as Styled from './styles'
+
 const Main = () => {
   return (
-    <main>
-      <h1>Nextjs Boilerplate</h1>
-    </main>
+    <Styled.Wrapper>
+      <Styled.Title>Nextjs Boilerplate</Styled.Title>
+      <Styled.Description>
+        TypeScript, React, Next.js, Styled Components, Jest and React Testing Library
+      </Styled.Description>
+    </Styled.Wrapper>
   )
 }
 
