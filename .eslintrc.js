@@ -35,7 +35,8 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:import/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:jest/recommended'
+    'plugin:jest/recommended',
+    'plugin:storybook/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -73,7 +74,6 @@ module.exports = {
         pathGroupsExcludedImportTypes: ['react']
       }
     ],
-
     '@typescript-eslint/explicit-module-boundary-types': OFF,
     '@typescript-eslint/naming-convention': [
       ERROR,

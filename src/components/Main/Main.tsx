@@ -1,12 +1,20 @@
 import * as Styled from './styles'
 
-const Main = () => {
+interface IMainProps {
+  title?: string
+  description?: string
+}
+
+const Main = (props: IMainProps) => {
+  const {
+    title = 'Nextjs Boilerplate',
+    description = 'TypeScript, React, Next.js, Styled Components, Jest and React Testing Library'
+  } = props
+
   return (
     <Styled.Wrapper>
-      <Styled.Title>Nextjs Boilerplate</Styled.Title>
-      <Styled.Description>
-        TypeScript, React, Next.js, Styled Components, Jest and React Testing Library
-      </Styled.Description>
+      <Styled.Title>{title}</Styled.Title>
+      <Styled.Description>{description}</Styled.Description>
     </Styled.Wrapper>
   )
 }
